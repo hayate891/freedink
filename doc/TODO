@@ -81,3 +81,10 @@ As of 2010-11-01
 
 [X] Wrong Pulseaudio detection [reported]
     http://bugzilla.libsdl.org/show_bug.cgi?id=1072
+
+
+Tests
+=====
+
+- Dink position is updated after a new screen is loaded:
+http://www.dinknetwork.com/forum.cgi?MID=186069#186263

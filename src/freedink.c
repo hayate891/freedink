@@ -1979,9 +1979,9 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	  if (map.indoor[*pmap] == 0)
 	    play.last_map = *pmap;
 	  
+	  draw_map_game();
 	  spr[h].x = 619;
 	  spr[h].y = spr[h].lpy[0];
-	  draw_map_game();
 	}
       else
 	{
@@ -2004,9 +2004,9 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	  if (map.indoor[*pmap] == 0)
 	    play.last_map = *pmap;
 	  
+	  draw_map_game();
 	  spr[h].x = playl;
 	  spr[h].y = spr[h].lpy[0];
-	  draw_map_game();
 	}
       else
 	{
@@ -2030,8 +2030,8 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	    play.last_map = *pmap;
 	  
 	  spr[h].x = spr[h].lpx[0];
-	  spr[h].y = 399;
 	  draw_map_game();
+	  spr[h].y = 399;
 	}
       else
 	{
@@ -2055,9 +2055,9 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	  if (map.indoor[*pmap] == 0)
 	    play.last_map = *pmap;
 	  
+	  draw_map_game();
 	  spr[h].y = 0;
 	  spr[h].x = spr[h].lpx[0];
-	  draw_map_game();
 	}
       else
 	{
