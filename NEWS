@@ -9,6 +9,9 @@
 - DinkC: load_palette() now searches for palette in the right place
   (thanks scratcher for the report)
 
+- DinkC: Dink position is updated after a new screen is loaded
+  (thanks metatarasal for the report)
+
 
 108.2
 =====

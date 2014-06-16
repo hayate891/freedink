@@ -1980,6 +1980,7 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	    play.last_map = *pmap;
 	  
 	  draw_map_game();
+	  // compatibility: update Dink position *after* screen change
 	  spr[h].x = 619;
 	  spr[h].y = spr[h].lpy[0];
 	}
@@ -2005,6 +2006,7 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	    play.last_map = *pmap;
 	  
 	  draw_map_game();
+	  // compatibility: update Dink position *after* screen change
 	  spr[h].x = playl;
 	  spr[h].y = spr[h].lpy[0];
 	}
@@ -2029,8 +2031,11 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	  if (map.indoor[*pmap] == 0)
 	    play.last_map = *pmap;
 	  
+	  // compatibility: update Dink X position *before* screen change
+	  // (shouldn't matter when though, since it's an Y motion)
 	  spr[h].x = spr[h].lpx[0];
 	  draw_map_game();
+	  // compatibility: update Dink Y position *after* screen change
 	  spr[h].y = 399;
 	}
       else
@@ -2056,6 +2061,7 @@ void did_player_cross_screen(/*bool*/int real, int h)
 	    play.last_map = *pmap;
 	  
 	  draw_map_game();
+	  // compatibility: update Dink position *after* screen change
 	  spr[h].y = 0;
 	  spr[h].x = spr[h].lpx[0];
 	}
