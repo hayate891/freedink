@@ -3,6 +3,10 @@
 
 * UNRELEASED
 
+- Never recreate an empty hard.dat in the game, even if there's a
+  problem opening it (avoids corruption when running both the game and
+  an editor at the same time).
+
 - New translation for the engine strings in Russian
   (thanks Yuri Kozlov)
 

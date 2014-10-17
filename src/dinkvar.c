@@ -1862,7 +1862,10 @@ void save_hard(void)
 
 
 /**
- * Load hard.dat which contains tile hardness information
+ * Load hard.dat which contains tile hardness information.
+ * 
+ * Unlike 1.08, don't reset and save hard.dat during game in case
+ * e.g. it was just being written by an external editor.
  */
 void load_hard(void)
 {
@@ -1877,16 +1880,14 @@ void load_hard(void)
   /* Try loading the D-Mod hard.dat */
   f = paths_dmodfile_fopen("hard.dat", "rb");
 
-  /* If running the game, fallback to the default hard.dat, but if
-     running the editor, recreate it in all cases. */
-  if (f == NULL && !dinkedit)
+  /* Fallback to the default hard.dat */
+  if (f == NULL)
     f = paths_fallbackfile_fopen("hard.dat", "rb");
 
   if (f == NULL)
     {
       //make new data file
       memset(&hmap, 0, sizeof(struct hardness));
-      save_hard();
       return;
     }
 
