@@ -35,7 +35,7 @@ Cf. doc/bootstrap.txt
 On the developer computer:
 --------------------------
 
-VERSION=108.2
+VERSION=108.4
 cd freedink/
 git checkout -b $VERSION
 # Edit NEWS
@@ -46,6 +46,7 @@ git checkout -b $VERSION
 # (Note: po/freedink.pot is updated automatically)
 # Edit doc/gnulib.txt with the version used
 
+make  # otherwise *** No rule to make target `../gnulib/lib/libgnu.a'
 make distcheck
 git commit -am "Start branch $VERSION"
 git push origin $VERSION master
