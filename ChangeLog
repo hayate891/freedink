@@ -1,3 +1,133 @@
+2014-10-22  Sylvain Beucler <beuc@beuc.net>
+
+	* NEWS, configure.ac, doc/release.txt: Prepare 108.4
+
+2014-10-22  Sylvain Beucler <beuc@beuc.net>
+
+	* freedink.spec: Sync Fedora
+
+2014-10-22  Sylvain Beucler <beuc@beuc.net>
+
+	* debian/changelog, debian/control: Prepare Debian release
+
+2014-10-22  Sylvain Beucler <beuc@beuc.net>
+
+	* AUTHORS, po/LINGUAS, po/hu.po: New hungarian translation
+
+2014-10-22  Sylvain Beucler <beuc@beuc.net>
+
+	* doc/gnulib.txt: gnulib: fix version used for 108.2
+
+2014-10-22  Sylvain Beucler <beuc@beuc.net>
+
+	* autobuild/freedink-exe-mxe.sh: Update woe compilation notes
+
+2014-10-17  Sylvain Beucler <beuc@beuc.net>
+
+	* NEWS, src/dinkvar.c: Never recreate an empty hard.dat in the game
+
+2014-10-17  Sylvain Beucler <beuc@beuc.net>
+
+	* src/dinkc_bindings.c: sp_script: more detail in error log
+
+2014-06-16  Sylvain Beucler <beuc@beuc.net>
+
+	* NEWS, src/freedink.c: Doc update Conflicts: 	NEWS
+
+2014-06-15  Sylvain Beucler <beuc@beuc.net>
+
+	* doc/TODO, src/freedink.c: Update Dink position after the new
+	screen is loaded.  This is nonsensical because scripts will then poll Dink's position
+	in the previous screen, but we've got to be compatible.  More details at:
+	http://www.dinknetwork.com/forum.cgi?MID=186069#186263 Conflicts: 	doc/TODO 	src/freedink.c
+
+2014-06-24  Sylvain Beucler <beuc@beuc.net>
+
+	* src/gfx_palette.c: gfx_palette: better error reporting Conflicts: 	src/gfx_palette.c
+
+2014-06-09  Sylvain Beucler <beuc@beuc.net>
+
+	* NEWS, src/dinkc_bindings.c, src/dinkvar.c: load_palette: search
+	for palette in the right place Conflicts: 	NEWS
+
+2014-06-07  Sylvain Beucler <beuc@beuc.net>
+
+	* src/gfx.c: debug: display video format
+
+2014-06-07  Sylvain Beucler <beuc@beuc.net>
+
+	* TROUBLESHOOTING, src/sfx.c: audio: log SDL_mixer capabilities
+
+2014-06-07  Sylvain Beucler <beuc@beuc.net>
+
+	* src/dinkc.c: DinkC: redefining globals is so common that we can't
+	say it's an error
+
+2014-06-04  Sylvain Beucler <beuc@beuc.net>
+
+	* src/dinkc.c: Typo
+
+2014-06-01  Sylvain Beucler <beuc@beuc.net>
+
+	* src/check_freedink.c: tests: update copyright notice - that test
+	is actually quite old :)
+
+2014-05-30  Sylvain Beucler <beuc@beuc.net>
+
+	* src/check_freedink.c, src/io_util.c: tests: ciconvert
+
+2014-05-30  Sylvain Beucler <beuc@beuc.net>
+
+	* AUTHORS, NEWS, po/LINGUAS, po/ru.po: Add Russian translation
+
+2014-05-30  Sylvain Beucler <beuc@beuc.net>
+
+	* freedink.spec: rpm: typo
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* src/check_freedink.c: tests: better structure
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* configure.ac, src/Makefile.am, src/check_freedink.c: tests: first
+	simple test with 'check'
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* debian/changelog: debian: bump version
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* src/str_util.c: Typo
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* src/dinkc_bindings.c: Fix potential out-of-bound string access +
+	doc fixes
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* doc/release.txt: Update FreshMeat -> FreeCode
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* freedink.spec: rpm: uniform capitalization
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* : commit 10ec46363d3be16f05f499b298b97bacbc6f0d3f Author: Sylvain
+	Beucler <beuc@beuc.net> Date:   Thu May 29 11:01:39 2014 +0200
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* debian/changelog, doc/release.txt, freedink.spec: packaging: bump
+	dates
+
+2014-05-29  Sylvain Beucler <beuc@beuc.net>
+
+	* ChangeLog: ChangeLog update
+
 2014-05-29  Sylvain Beucler <beuc@beuc.net>
 
 	* freedink.spec: rpm: lint
